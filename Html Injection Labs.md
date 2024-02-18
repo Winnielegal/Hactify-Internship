@@ -1,33 +1,45 @@
-# Lab 1 - HTML Injection
+# HTML Injection
 
-Welcome to Lab 1 of the HTML Injection series at Hactify! This lab will introduce you to HTML Injection, a vulnerability commonly found in web applications.
+Welcome to Lab 1 of the HTML Injection series at Hactify! In this lab, we'll delve into HTML Injection, a common vulnerability in web applications.
 
-## About HTML Injection
-HTML Injection is a vulnerability that occurs in web applications, allowing users to insert HTML code via a specific parameter or entry point. Unlike Cross-site Scripting (XSS), HTML Injection only allows the injection of certain HTML tags. When an application fails to properly handle user-supplied data, attackers can inject valid HTML code, typically via a parameter value, to insert their own content into the page.
+## Understanding HTML Injection
+HTML Injection arises when web applications inadequately sanitize user input, enabling users to insert HTML code through specific parameters or entry points. Unlike Cross-site Scripting (XSS), HTML Injection permits the injection of select HTML tags. When an application fails to properly sanitize user-supplied data, attackers exploit this vulnerability by injecting valid HTML code, usually through a parameter value, to incorporate their own content into the webpage.
 
-### Severity
-- The severity of HTML Injection is categorized as a P4 bug with a CVSS score of 0.1-3.9, which is Low. However, in cases of account takeover, it can be categorized as P3.
+### Severity Assessment
+HTML Injection is typically classified as a P4 bug with a CVSS score ranging from 0.1 to 3.9, indicating a Low severity. However, if the vulnerability leads to account takeover scenarios, its severity escalates to P3.
 
 ### Exploiting HTML Injection
-1. Test every entry point on a target website.
-2. Refer to the HTML Injection Documentation.
-3. Check for valid HTML Injection onto the screen.
+To exploit HTML Injection effectively, attackers typically follow these steps:
+1. **Probe Entry Points:** Test all entry points accessible on the target website to identify potential injection vulnerabilities.
+2. **Reference Documentation:** Consult HTML Injection documentation for known techniques and payloads.
+3. **Validate Injection:** Inject HTML payloads into input fields and observe whether they render as intended on the webpage.
 
-## Getting Started
-To begin Lab 1:
+## Getting Started with Lab 1
+To commence Lab 1, follow these steps:
 1. Navigate to the Hactify Labs website: [https://labs.hacktify.in](https://labs.hacktify.in).
-2. Find the HTML Labs section.
-3. Select Lab 1 - HTML Injection.
+2. Locate the HTML Labs section.
+3. Choose Lab 1 - HTML Injection.
    ![Lab 1](lab1intro.png)
-4. Read the lab description and instructions provided.
-5. Click on the "Start Lab" button to begin.
+4. Review the lab description and provided instructions thoroughly.
+5. Click on the "Start Lab" button to initiate the exercise.
 
-## Let's Get Exploring
-Alright, time to dive in! Here's what we're gonna do:
-1. Check if Our Name Shows Up: Type your name into the search bar and hit enter. Notice how your name pops up on the page? Yeah, that's what we're talking about!
+## Let's Explore Further
+Now, let's delve deeper into the lab tasks:
+1. **Verify Name Display:** Input your name into the search bar and press enter. Notice how your name dynamically appears on the page? This illustrates the functionality we'll be examining.
    ![Lab 1](searchkenzie.png)
-2. Let's Have Some Fun with HTML: Now, let's get a bit sneaky. Try typing in `<h1>kenzie</h1>` into the search bar. What happens? Oh, looks like something interesting happened! Take a peek:
+2. **Experiment with HTML Injection:** Let's test the vulnerability. Input `<h1>kenzie</h1>` into the search bar and submit. Observe any changes on the page. Voilà! You've injected HTML successfully.
    ![Lab 1](htmlkenzie.png)
 
-   This confirms that the search parameter is vulnerable to HTML injection.
+This demonstration confirms the susceptibility of the search parameter to HTML injection attacks.
 
+
+
+
+## Getting Started with Lab 2
+To commence Lab 1, follow these steps:
+1. Navigate to the Hactify Labs website: [https://labs.hacktify.in](https://labs.hacktify.in).
+2. Locate the HTML Labs section.
+3. Choose Lab 1 - HTML Injection.
+   ![Lab 2](lab2intro.png)
+4. Review the lab description and provided instructions thoroughly.
+5. Click on the "Start Lab" button to initiate the exercise.
